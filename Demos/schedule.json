@@ -1,0 +1,193 @@
+{
+  "project_name": "Downtown Commercial Complex",
+  "project_id": "DCC-2026-001",
+  "last_updated": "2026-06-26",
+  "schedule": {
+    "phases": [
+      {
+        "phase_id": "P001",
+        "name": "Site Preparation",
+        "start_date": "2026-07-01",
+        "end_date": "2026-07-15",
+        "status": "completed",
+        "progress": 100,
+        "team_size": 12,
+        "contractor": "GroundWorks Construction Ltd",
+        "milestones": [
+          {
+            "name": "Site Clearing Complete",
+            "date": "2026-07-08",
+            "status": "completed"
+          },
+          {
+            "name": "Foundation Excavation",
+            "date": "2026-07-15",
+            "status": "completed"
+          }
+        ],
+        "dependencies": [],
+        "critical_path": true,
+        "notes": "Completed 2 days ahead of schedule"
+      },
+      {
+        "phase_id": "P002",
+        "name": "Foundation Construction",
+        "start_date": "2026-07-16",
+        "end_date": "2026-08-15",
+        "status": "in_progress",
+        "progress": 65,
+        "team_size": 18,
+        "contractor": "Premier Concrete Inc",
+        "milestones": [
+          {
+            "name": "Concrete Pouring Complete",
+            "date": "2026-07-30",
+            "status": "completed"
+          },
+          {
+            "name": "Foundation Curing",
+            "date": "2026-08-10",
+            "status": "in_progress"
+          },
+          {
+            "name": "Foundation Inspection",
+            "date": "2026-08-15",
+            "status": "pending"
+          }
+        ],
+        "dependencies": ["P001"],
+        "critical_path": true,
+        "notes": "On track for completion"
+      },
+      {
+        "phase_id": "P003",
+        "name": "Structural Steel Erection",
+        "start_date": "2026-08-16",
+        "end_date": "2026-09-30",
+        "status": "pending",
+        "progress": 0,
+        "team_size": 24,
+        "contractor": "Steel Structures Co",
+        "milestones": [
+          {
+            "name": "Steel Delivery",
+            "date": "2026-08-16",
+            "status": "pending"
+          },
+          {
+            "name": "First Floor Complete",
+            "date": "2026-09-15",
+            "status": "pending"
+          },
+          {
+            "name": "Roof Structure Complete",
+            "date": "2026-09-30",
+            "status": "pending"
+          }
+        ],
+        "dependencies": ["P002"],
+        "critical_path": true,
+        "notes": "Awaiting foundation completion"
+      },
+      {
+        "phase_id": "P004",
+        "name": "Electrical and Plumbing",
+        "start_date": "2026-09-01",
+        "end_date": "2026-10-31",
+        "status": "pending",
+        "progress": 0,
+        "team_size": 15,
+        "contractor": "Metro MEP Services",
+        "milestones": [
+          {
+            "name": "Rough-in Complete",
+            "date": "2026-09-30",
+            "status": "pending"
+          },
+          {
+            "name": "Final Installation",
+            "date": "2026-10-31",
+            "status": "pending"
+          }
+        ],
+        "dependencies": ["P003"],
+        "critical_path": false,
+        "notes": "Can proceed alongside steel work"
+      },
+      {
+        "phase_id": "P005",
+        "name": "Interior Finishing",
+        "start_date": "2026-10-15",
+        "end_date": "2026-12-15",
+        "status": "pending",
+        "progress": 0,
+        "team_size": 20,
+        "contractor": "Interior Pro Contractors",
+        "milestones": [
+          {
+            "name": "Drywall Complete",
+            "date": "2026-11-01",
+            "status": "pending"
+          },
+          {
+            "name": "Flooring Complete",
+            "date": "2026-11-30",
+            "status": "pending"
+          },
+          {
+            "name": "Final Inspection",
+            "date": "2026-12-15",
+            "status": "pending"
+          }
+        ],
+        "dependencies": ["P004"],
+        "critical_path": false,
+        "notes": "Flexible timeline based on MEP completion"
+      }
+    ],
+    "upcoming_deadlines": [
+      {
+        "date": "2026-08-10",
+        "task": "Foundation Curing Complete",
+        "priority": "high",
+        "impact": "Delays steel erection if not completed",
+        "responsible_party": "Premier Concrete Inc"
+      },
+      {
+        "date": "2026-08-15",
+        "task": "Foundation Inspection",
+        "priority": "critical",
+        "impact": "Cannot proceed without approval",
+        "responsible_party": "Site Supervisor"
+      },
+      {
+        "date": "2026-08-16",
+        "task": "Steel Delivery",
+        "priority": "high",
+        "impact": "Delays structural work if not on time",
+        "responsible_party": "Steel Structures Co"
+      }
+    ],
+    "team_assignments": {
+      "project_manager": "Emily Davis",
+      "site_supervisor": "Sarah Chen",
+      "safety_officer": "James Wilson",
+      "foreman": "Michael Rodriguez",
+      "quality_control": "Lisa Thompson"
+    },
+    "overall_progress": {
+      "completed_phases": 1,
+      "in_progress_phases": 1,
+      "pending_phases": 3,
+      "total_phases": 5,
+      "overall_percentage": 33
+    },
+    "key_dates": {
+      "project_start": "2026-07-01",
+      "estimated_completion": "2026-12-15",
+      "total_duration_days": 167,
+      "days_elapsed": 25,
+      "days_remaining": 142
+    }
+  }
+}
