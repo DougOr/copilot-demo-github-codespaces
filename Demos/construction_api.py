@@ -23,10 +23,11 @@ app = FastAPI(
 # Add CORS middleware to allow Copilot to access the API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, specify actual origins
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=["*"],  # Allow all origins for Copilot access
+    allow_credentials=False,  # Changed to False for broader compatibility
+    allow_methods=["GET", "POST", "OPTIONS"],  # Explicitly allow common methods
+    allow_headers=["*"],  # Allow all headers
+    max_age=3600,  # Cache preflight requests for 1 hour
 )
 
 # Load configuration
@@ -410,4 +411,3 @@ if __name__ == "__main__":
     """)
     
     uvicorn.run(app, host="0.0.0.0", port=8000)
-  +++++++ REPLACE
