@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-06-26",
+  "description": "Configuration for local construction management API endpoints",
+  "endpoints": {
+    "schedule": {
+      "name": "Schedule Management",
+      "description": "Construction project schedules and timelines",
+      "file_path": "./schedule.json",
+      "endpoint": "/api/schedule",
+      "methods": ["GET", "POST"],
+      "voice_keywords": [
+        "schedule",
+        "timeline",
+        "calendar",
+        "when",
+        "deadline",
+        "project schedule",
+        "work schedule",
+        "task schedule"
+      ],
+      "sample_queries": [
+        "What's the schedule for this week?",
+        "When is the foundation phase complete?",
+        "Show me the project timeline",
+        "What are the upcoming deadlines?",
+        "What's the current phase status?"
+      ]
+    },
+    "inventory": {
+      "name": "Inventory Management",
+      "description": "Construction materials and equipment inventory",
+      "file_path": "./inventory.json",
+      "endpoint": "/api/inventory",
+      "methods": ["GET", "POST"],
+      "voice_keywords": [
+        "inventory",
+        "materials",
+        "equipment",
+        "stock",
+        "available",
+        "supplies",
+        "tools",
+        "resources"
+      ],
+      "sample_queries": [
+        "What inventory do we have available?",
+        "Do we have enough concrete for the foundation?",
+        "Show me all power tools in stock",
+        "What materials are running low?",
+        "Is there any equipment available for use?"
+      ]
+    }
+  }
+}

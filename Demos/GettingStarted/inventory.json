@@ -1,0 +1,225 @@
+{
+  "location": "Downtown Commercial Complex - Construction Site",
+  "location_id": "DCC-SITE-A",
+  "last_updated": "2026-06-26",
+  "last_audit": "2026-06-25",
+  "inventory": {
+    "materials": [
+      {
+        "item_id": "MAT-001",
+        "name": "Ready-Mix Concrete",
+        "category": "Construction Materials",
+        "quantity": 150,
+        "unit": "cubic_meters",
+        "reorder_level": 50,
+        "unit_cost": 120.00,
+        "supplier": "Concrete Express",
+        "location": "Storage Area A",
+        "condition": "good",
+        "last_restocked": "2026-06-20",
+        "project_phase": "Foundation Construction"
+      },
+      {
+        "item_id": "MAT-002",
+        "name": "Steel Reinforcement Bars",
+        "category": "Structural Materials",
+        "quantity": 2500,
+        "unit": "linear_meters",
+        "reorder_level": 800,
+        "unit_cost": 8.50,
+        "supplier": "Steel Supply Co",
+        "location": "Storage Area B",
+        "condition": "good",
+        "last_restocked": "2026-06-18",
+        "project_phase": "Foundation Construction"
+      },
+      {
+        "item_id": "MAT-003",
+        "name": "Plywood Sheets",
+        "category": "Construction Materials",
+        "quantity": 450,
+        "unit": "sheets",
+        "reorder_level": 150,
+        "unit_cost": 25.00,
+        "supplier": "Lumber & More",
+        "location": "Storage Area C",
+        "condition": "good",
+        "last_restocked": "2026-06-22",
+        "project_phase": "General Use"
+      },
+      {
+        "item_id": "MAT-004",
+        "name": "Nails and Fasteners",
+        "category": "Construction Materials",
+        "quantity": 200,
+        "unit": "boxes",
+        "reorder_level": 500,
+        "unit_cost": 15.00,
+        "supplier": "Fasteners Direct",
+        "location": "Storage Area C",
+        "condition": "good",
+        "last_restocked": "2026-06-10",
+        "project_phase": "General Use"
+      },
+      {
+        "item_id": "MAT-005",
+        "name": "Electrical Wiring",
+        "category": "Electrical Materials",
+        "quantity": 800,
+        "unit": "meters",
+        "reorder_level": 300,
+        "unit_cost": 2.50,
+        "supplier": "Electro Supply Inc",
+        "location": "Storage Area D",
+        "condition": "good",
+        "last_restocked": "2026-06-15",
+        "project_phase": "Electrical and Plumbing"
+      }
+    ],
+    "equipment": [
+      {
+        "item_id": "EQ-001",
+        "name": "Excavator CAT 320",
+        "category": "Heavy Equipment",
+        "quantity": 2,
+        "unit": "units",
+        "status": "available",
+        "maintenance_status": "good",
+        "next_maintenance": "2026-07-15",
+        "operator_required": true,
+        "location": "Equipment Yard",
+        "hourly_rate": 150.00,
+        "current_operator": null
+      },
+      {
+        "item_id": "EQ-002",
+        "name": "Concrete Mixer Truck",
+        "category": "Heavy Equipment",
+        "quantity": 1,
+        "unit": "units",
+        "status": "in_use",
+        "maintenance_status": "good",
+        "next_maintenance": "2026-07-01",
+        "operator_required": true,
+        "location": "Foundation Area",
+        "hourly_rate": 120.00,
+        "current_operator": "John Martinez"
+      },
+      {
+        "item_id": "EQ-003",
+        "name": "Power Drill Professional",
+        "category": "Power Tools",
+        "quantity": 15,
+        "unit": "units",
+        "status": "available",
+        "maintenance_status": "good",
+        "next_maintenance": "2026-08-01",
+        "operator_required": false,
+        "location": "Tool Crib",
+        "hourly_rate": 5.00,
+        "current_operator": null
+      },
+      {
+        "item_id": "EQ-004",
+        "name": "Circular Saw",
+        "category": "Power Tools",
+        "quantity": 8,
+        "unit": "units",
+        "status": "available",
+        "maintenance_status": "good",
+        "next_maintenance": "2026-07-20",
+        "operator_required": false,
+        "location": "Tool Crib",
+        "hourly_rate": 4.00,
+        "current_operator": null
+      },
+      {
+        "item_id": "EQ-005",
+        "name": "Crane Tower 50-ton",
+        "category": "Heavy Equipment",
+        "quantity": 1,
+        "unit": "units",
+        "status": "maintenance",
+        "maintenance_status": "scheduled",
+        "next_maintenance": "2026-06-30",
+        "operator_required": true,
+        "location": "Equipment Yard",
+        "hourly_rate": 200.00,
+        "current_operator": null
+      },
+      {
+        "item_id": "EQ-006",
+        "name": "Welding Machine",
+        "category": "Power Tools",
+        "quantity": 3,
+        "unit": "units",
+        "status": "available",
+        "maintenance_status": "good",
+        "next_maintenance": "2026-08-15",
+        "operator_required": true,
+        "location": "Tool Crib",
+        "hourly_rate": 15.00,
+        "current_operator": null
+      }
+    ],
+    "safety_equipment": [
+      {
+        "item_id": "SAFE-001",
+        "name": "Hard Hats",
+        "quantity": 50,
+        "unit": "units",
+        "reorder_level": 15,
+        "status": "available",
+        "location": "Safety Office",
+        "last_inspected": "2026-06-20"
+      },
+      {
+        "item_id": "SAFE-002",
+        "name": "Safety Vests",
+        "quantity": 45,
+        "unit": "units",
+        "reorder_level": 10,
+        "status": "available",
+        "location": "Safety Office",
+        "last_inspected": "2026-06-20"
+      },
+      {
+        "item_id": "SAFE-003",
+        "name": "Safety Glasses",
+        "quantity": 60,
+        "unit": "units",
+        "reorder_level": 20,
+        "status": "available",
+        "location": "Safety Office",
+        "last_inspected": "2026-06-20"
+      },
+      {
+        "item_id": "SAFE-004",
+        "name": "Steel-Toed Boots",
+        "quantity": 35,
+        "unit": "pairs",
+        "reorder_level": 10,
+        "status": "available",
+        "location": "Safety Office",
+        "last_inspected": "2026-06-20"
+      }
+    ],
+    "low_stock_alerts": [
+      {
+        "item_id": "MAT-004",
+        "name": "Nails and Fasteners",
+        "current_quantity": 200,
+        "reorder_level": 500,
+        "urgency": "medium",
+        "recommended_action": "Order additional 300 boxes",
+        "supplier": "Fasteners Direct"
+      }
+    ],
+    "equipment_status_summary": {
+      "available": 4,
+      "in_use": 1,
+      "maintenance": 1,
+      "total": 6
+    }
+  }
+}
